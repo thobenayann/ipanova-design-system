@@ -1,0 +1,129 @@
+{
+  "font": {
+    "primary": "Poppins",
+    "logo": "ipanova custom (lowercase, avec descentes typographiques spécifiques)",
+    "note": "Poppins est la seule police autorisée dans les slides Ipanova hors logo."
+  },
+  "scale": {
+    "cover-title": {
+      "family": "Poppins",
+      "weight": "900 (Black)",
+      "size": "72-96pt",
+      "case": "UPPERCASE",
+      "color": "dark (#333333)",
+      "usage": "Titre principal slide de couverture"
+    },
+    "cover-logo": {
+      "family": "ipanova custom",
+      "size": "80-100pt",
+      "color": "secondary (#006688)",
+      "case": "lowercase",
+      "usage": "Logo textuel sur la cover"
+    },
+    "section-banner-label": {
+      "family": "Poppins",
+      "weight": "700 (Bold)",
+      "size": "12-14pt",
+      "case": "UPPERCASE",
+      "letterSpacing": "3-4px",
+      "color": "white (#FFFFFF)",
+      "background": "banner (#555555)",
+      "usage": "Label de section dans le bandeau horizontal gris"
+    },
+    "h1-slide": {
+      "family": "Poppins",
+      "weight": "800 (ExtraBold)",
+      "size": "36-48pt",
+      "case": "UPPERCASE",
+      "color": "dark (#333333)",
+      "accent-color": "primary (#51bdcb)",
+      "usage": "Titre principal des slides de contenu — certains mots en primary"
+    },
+    "h1-section-divider": {
+      "family": "Poppins",
+      "weight": "900 (Black)",
+      "size": "56-72pt",
+      "case": "UPPERCASE",
+      "color": "dark (#333333)",
+      "usage": "Titre sur slides de transition de section"
+    },
+    "ghost-number": {
+      "family": "Poppins",
+      "weight": "900 (Black)",
+      "size": "200-280pt",
+      "color": "ghost (#CCCCCC)",
+      "opacity": "0.35",
+      "usage": "Grands chiffres décoratifs 01/02..."
+    },
+    "subtitle": {
+      "family": "Poppins",
+      "weight": "600 (SemiBold)",
+      "size": "16-20pt",
+      "color": "dark (#333333)",
+      "usage": "Sous-titre centré sous le H1 (phrase accroche)"
+    },
+    "icon-block-title": {
+      "family": "Poppins",
+      "weight": "700 (Bold)",
+      "size": "16-18pt",
+      "color": "dark (#333333)",
+      "usage": "Label gras d'un bloc icône"
+    },
+    "body": {
+      "family": "Poppins",
+      "weight": "400 (Regular)",
+      "size": "13-15pt",
+      "color": "dark (#333333)",
+      "lineHeight": "1.5",
+      "usage": "Texte de description sous les titres d'items"
+    },
+    "body-bold": {
+      "family": "Poppins",
+      "weight": "700 (Bold)",
+      "size": "13-15pt",
+      "color": "dark (#333333)",
+      "usage": "Mots-clés en gras dans le corps de texte"
+    },
+    "tagline-italic": {
+      "family": "Poppins",
+      "weight": "700 (Bold)",
+      "style": "Italic",
+      "size": "13-15pt",
+      "color": "primary (#51bdcb)",
+      "usage": "Phrase de conclusion italique en teal sous chaque bloc de service"
+    },
+    "quote-text": {
+      "family": "Poppins",
+      "weight": "600 (SemiBold)",
+      "style": "Italic",
+      "size": "14-16pt",
+      "color": "dark (#333333)",
+      "usage": "Texte des blocs citation"
+    },
+    "pill-label": {
+      "family": "Poppins",
+      "weight": "600 (SemiBold)",
+      "size": "13-14pt",
+      "color": "white (#FFFFFF)",
+      "background": "primary (#51bdcb)",
+      "borderRadius": "6-8px",
+      "usage": "Étiquettes de catégorie dans les slides numbered-steps"
+    },
+    "caption": {
+      "family": "Poppins",
+      "weight": "400 (Regular)",
+      "size": "11-12pt",
+      "color": "dark (#333333)",
+      "usage": "Petits textes, métadonnées, date de révision"
+    },
+    "page-number": {
+      "family": "Poppins",
+      "weight": "700 (Bold)",
+      "size": "13-14pt",
+      "color": "white (#FFFFFF)",
+      "background": "dark (#333333)",
+      "shape": "carré 28x28px",
+      "usage": "Numéro de page dans le bandeau section"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "color": {
+    "primary": {
+      "value": "#51bdcb",
+      "description": "Teal principal — accentuation, icônes, mots-clés surlignés, bordures accent, dots décoratifs",
+      "usage": [
+        "Mots accentués dans les titres",
+        "Fond des icon-blocks",
+        "Bordures gauches des items livrables",
+        "Points décoratifs",
+        "Taglines en italique",
+        "Chevrons décoratifs",
+        "Flèches de processus",
+        "Numéros de sections actifs"
+      ]
+    },
+    "secondary": {
+      "value": "#006688",
+      "description": "Bleu foncé — logo, titres forts, éléments de profondeur",
+      "usage": [
+        "Logo ipanova (couleur des lettres)",
+        "Accents secondaires sur les diagonales décoratives",
+        "Fond du panneau gauche split (version sombre)",
+        "Variante de bordure left-border-item"
+      ]
+    },
+    "dark": {
+      "value": "#333333",
+      "description": "Quasi-noir — texte principal, titres, labels",
+      "usage": [
+        "Corps de texte",
+        "Titres H1/H2 partie noire",
+        "Labels icon-blocks",
+        "Texte dans les bandeaux gris"
+      ]
+    },
+    "light": {
+      "value": "#FAFAFA",
+      "description": "Blanc cassé — fond de slide standard",
+      "usage": [
+        "Fond de la majorité des slides",
+        "Fond des colonnes de contenu"
+      ]
+    },
+    "white": {
+      "value": "#FFFFFF",
+      "description": "Blanc pur — texte sur fond sombre"
+    },
+    "ghost": {
+      "value": "#CCCCCC",
+      "description": "Gris très clair — grands chiffres décoratifs en arrière-plan",
+      "opacity": "0.35",
+      "usage": [
+        "Ghost numbers 01/02/03... sur slides sommaire et section divider"
+      ]
+    },
+    "banner": {
+      "value": "#555555",
+      "description": "Gris moyen — fond des bandeaux de section en haut de slide",
+      "usage": [
+        "Bandeau horizontal supérieur avec label de section en blanc"
+      ]
+    },
+    "light-teal": {
+      "value": "#B8E8EE",
+      "description": "Teal très clair — fonds dégradés, diagonales décoratives légères",
+      "usage": [
+        "Coins décoratifs gauche/bas sur slide sommaire",
+        "Fonds dégradés subtils"
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "slide": {
+    "format": "16:9",
+    "width_pt": 1280,
+    "height_pt": 720,
+    "note": "Référence en points PowerPoint (1pt = 1/72 pouce). Taille standard widescreen."
+  },
+  "margins": {
+    "top": "48pt",
+    "bottom": "40pt",
+    "left": "60pt",
+    "right": "60pt",
+    "note": "Marges internes du contenu principal. Le logo top-right peut déborder légèrement."
+  },
+  "logo": {
+    "position": "top-right",
+    "margin-top": "20pt",
+    "margin-right": "40pt",
+    "height": "32-36pt"
+  },
+  "section-banner": {
+    "height": "36pt",
+    "padding-left": "60pt",
+    "padding-right": "60pt",
+    "position": "top, full width"
+  },
+  "page-number-badge": {
+    "size": "28x28pt",
+    "position": "right side of section-banner",
+    "margin-right": "0"
+  },
+  "content-split": {
+    "left-panel-width": "35%",
+    "right-panel-width": "65%",
+    "gap": "0"
+  },
+  "icon-block": {
+    "icon-size": "56-64pt",
+    "gap-icon-title": "16pt",
+    "gap-title-body": "6pt",
+    "gap-between-blocks": "24-28pt"
+  },
+  "left-border-item": {
+    "border-width": "4pt",
+    "padding-left": "16pt",
+    "gap-between-items": "20pt"
+  },
+  "ghost-number": {
+    "position": "behind content, slight top-left offset",
+    "overlap": "title overlaps ghost number deliberately"
+  },
+  "hexagon-frame": {
+    "size": "200-240pt",
+    "border-width": "3pt",
+    "border-color": "primary (#51bdcb)",
+    "overlap-between-hexagons": "20-30pt"
+  },
+  "chevron-accent": {
+    "position": "bottom-right or center-right",
+    "size": "60x80pt",
+    "color": "primary (#51bdcb)"
+  },
+  "teal-dot": {
+    "sizes": ["10pt", "14pt", "18pt"],
+    "usage": "Accents décoratifs épars — max 3 par slide"
+  }
+}
