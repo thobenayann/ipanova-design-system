@@ -1,0 +1,54 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1280" height="320" fill="#1a1a1a"/>
+
+  <!-- Decorative diagonal shapes — bottom left -->
+  <polygon points="0,320 180,320 0,160" fill="#51bdcb" opacity="0.12"/>
+  <polygon points="0,320 120,320 0,220" fill="#51bdcb" opacity="0.18"/>
+
+  <!-- Decorative diagonal shapes — top right -->
+  <polygon points="1280,0 1100,0 1280,160" fill="#006688" opacity="0.20"/>
+  <polygon points="1280,0 1160,0 1280,100" fill="#51bdcb" opacity="0.15"/>
+
+  <!-- Chevron accent — right -->
+  <line x1="1180" y1="80" x2="1230" y2="140" stroke="#51bdcb" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1230" y1="140" x2="1180" y2="200" stroke="#51bdcb" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1140" y1="90" x2="1190" y2="150" stroke="#51bdcb" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <line x1="1190" y1="150" x2="1140" y2="210" stroke="#51bdcb" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Teal dots pattern — top right area -->
+  <circle cx="920" cy="48" r="6" fill="#51bdcb" opacity="0.6"/>
+  <circle cx="960" cy="48" r="6" fill="#51bdcb" opacity="0.4"/>
+  <circle cx="1000" cy="48" r="6" fill="#51bdcb" opacity="0.25"/>
+  <circle cx="920" cy="80" r="6" fill="#51bdcb" opacity="0.3"/>
+  <circle cx="960" cy="80" r="6" fill="#51bdcb" opacity="0.5"/>
+
+  <!-- Teal horizontal accent line -->
+  <rect x="80" y="210" width="120" height="4" fill="#51bdcb" rx="2"/>
+
+  <!-- ipanova logo text -->
+  <text x="80" y="130" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2" opacity="0.95">ipanova</text>
+  <!-- Teal dot from logo -->
+  <circle cx="484" cy="138" r="7" fill="#51bdcb"/>
+
+  <!-- Design System subtitle -->
+  <text x="82" y="185" font-size="22" font-weight="400" fill="#51bdcb" letter-spacing="8">DESIGN  SYSTEM</text>
+
+  <!-- Tagline -->
+  <text x="82" y="248" font-size="16" font-weight="400" fill="#888888" letter-spacing="1">Single-file · LLM-ready · PowerPoint generation</text>
+
+  <!-- Version badge -->
+  <rect x="82" y="268" width="76" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
+  <rect x="82" y="268" width="76" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
+  <text x="120" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">v 2.0.0</text>
+
+  <!-- Slide count badge -->
+  <rect x="170" y="268" width="110" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
+  <rect x="170" y="268" width="110" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
+  <text x="225" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">10 LAYOUTS</text>
+
+  <!-- Asset badge -->
+  <rect x="292" y="268" width="120" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
+  <rect x="292" y="268" width="120" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
+  <text x="352" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">40+ ASSETS</text>
+</svg>
