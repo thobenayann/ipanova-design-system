@@ -1,54 +1,57 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
   <rect width="1280" height="320" fill="#1a1a1a"/>
 
-  <!-- Decorative diagonal shapes — bottom left -->
-  <polygon points="0,320 180,320 0,160" fill="#51bdcb" opacity="0.12"/>
-  <polygon points="0,320 120,320 0,220" fill="#51bdcb" opacity="0.18"/>
+  <!-- Graphical element: diagonal bars top-right (signature corner Ipanova) -->
+  <rect x="980" y="-30" width="32" height="220" rx="4" fill="#006688" opacity="0.55" transform="rotate(45 1060 80)"/>
+  <rect x="1040" y="-30" width="20" height="200" rx="4" fill="#51bdcb" opacity="0.35" transform="rotate(45 1100 80)"/>
+  <rect x="1090" y="-20" width="28" height="240" rx="4" fill="#006688" opacity="0.40" transform="rotate(45 1150 100)"/>
+  <rect x="1140" y="-10" width="16" height="260" rx="4" fill="#51bdcb" opacity="0.25" transform="rotate(45 1200 120)"/>
 
-  <!-- Decorative diagonal shapes — top right -->
-  <polygon points="1280,0 1100,0 1280,160" fill="#006688" opacity="0.20"/>
-  <polygon points="1280,0 1160,0 1280,100" fill="#51bdcb" opacity="0.15"/>
+  <!-- Graphical element: chevron teal — right edge -->
+  <polyline points="1210,90 1248,145 1210,200" fill="none" stroke="#51bdcb" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="1178,100 1216,155 1178,210" fill="none" stroke="#51bdcb" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity="0.45"/>
 
-  <!-- Chevron accent — right -->
-  <line x1="1180" y1="80" x2="1230" y2="140" stroke="#51bdcb" stroke-width="8" stroke-linecap="round"/>
-  <line x1="1230" y1="140" x2="1180" y2="200" stroke="#51bdcb" stroke-width="8" stroke-linecap="round"/>
-  <line x1="1140" y1="90" x2="1190" y2="150" stroke="#51bdcb" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
-  <line x1="1190" y1="150" x2="1140" y2="210" stroke="#51bdcb" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <!-- Teal dots — top right area (motif signature) -->
+  <circle cx="870" cy="42" r="6" fill="#51bdcb" opacity="0.65"/>
+  <circle cx="912" cy="42" r="6" fill="#51bdcb" opacity="0.40"/>
+  <circle cx="870" cy="76" r="6" fill="#51bdcb" opacity="0.30"/>
+  <circle cx="912" cy="76" r="6" fill="#51bdcb" opacity="0.55"/>
+  <circle cx="954" cy="42" r="5" fill="#51bdcb" opacity="0.20"/>
 
-  <!-- Teal dots pattern — top right area -->
-  <circle cx="920" cy="48" r="6" fill="#51bdcb" opacity="0.6"/>
-  <circle cx="960" cy="48" r="6" fill="#51bdcb" opacity="0.4"/>
-  <circle cx="1000" cy="48" r="6" fill="#51bdcb" opacity="0.25"/>
-  <circle cx="920" cy="80" r="6" fill="#51bdcb" opacity="0.3"/>
-  <circle cx="960" cy="80" r="6" fill="#51bdcb" opacity="0.5"/>
+  <!-- Bottom-left corner glow -->
+  <polygon points="0,320 160,320 0,200" fill="#51bdcb" opacity="0.07"/>
+  <polygon points="0,320 90,320 0,250" fill="#51bdcb" opacity="0.10"/>
 
-  <!-- Teal horizontal accent line -->
-  <rect x="80" y="210" width="120" height="4" fill="#51bdcb" rx="2"/>
+  <!-- ═══ LOGO IPANOVA — paths embedded, white letters + teal dots ═══ -->
+  <g transform="translate(80,76) scale(0.48)">
+    <!-- Top teal dot (above "i") -->
+    <path fill="#51bdcb" d="M7.5 0C3.3 0 0 3.2 0 7.3c0 4.3 3.3 7.3 7.5 7.3 4.3 0 7.6-3 7.6-7.3 0-4.1-3.3-7.3-7.6-7.3z"/>
+    <!-- Letter forms — white on dark background -->
+    <path fill="#ffffff" d="M2.1 35.2h10.8v73.5H2.1zm50.7 0H42v113h10.9v-4.5h-.1zm26.6-1.9c-7.9 0-14.8 2-20.6 5.7v10.8c5.5-4.7 12.1-6.9 19.3-6.9 16.1 0 28.5 13.4 28.5 29.1 0 15.9-12.4 29.3-28.5 29.3-7.3 0-13.9-2.3-19.3-6.9v10.8c5.8 3.6 12.7 5.7 20.6 5.7 21.2 0 38-17.2 38-38.8.1-21.6-16.8-38.8-38-38.8zm120.2 10.2c-6.7-6.4-15.6-10.2-26.6-10.2-21 0-38 17.2-38 38.7 0 21.6 17 38.8 38 38.8 11 0 19.9-3.8 26.6-10.2v8.1h10.8V35.2h-10.8v8.3zm0 44.4c-6.2 8.9-15.1 13.4-25.2 13.4-16.2 0-28.5-13.4-28.5-29.3 0-15.8 12.3-29.1 28.5-29.1 10 0 19 4.4 25.2 13.4v31.6zm37.7-52.7h10.6v73.5h-10.6zm38.1-2.4c-8 0-15.4 2.3-21.4 6.3v11.1c5.7-4.8 12.7-7.4 19.5-7.4 13.4 0 22.4 8.8 22.4 24v41.9h10.8V66.4c0-20.7-12.9-33.6-31.3-33.6zm89.9.5c-22.1 0-39.2 16.9-39.2 38.7 0 22.1 17 39.2 39.2 39.2 22 0 39-17 39-39.2 0-21.9-17-38.7-39-38.7zm0 67.9c-16.1 0-28.2-13-28.2-29.3 0-15.8 12.1-28.7 28.2-28.7s28.2 12.9 28.2 28.7c0 16.3-12.1 29.3-28.2 29.3zm59.4-66H413l35.1 73.5h10l.6-1.2-10.6-22.9zm56.6 0l-25 52.8 5.7 12.4 31.1-65.2zm84.7 77.3h10.8V35.2H566v8.3c-6.7-6.4-15.6-10.2-26.6-10.2-21 0-38 17.2-38 38.7 0 21.6 17 38.8 38 38.8 11 0 19.9-3.8 26.6-10.2v11.9zm-25.1-11.3c-16.2 0-28.5-13.4-28.5-29.3 0-15.8 12.3-29.1 28.5-29.1 10 0 19 4.4 25.2 13.4v31.7c-6.3 8.9-15.2 13.3-25.2 13.3z"/>
+    <!-- Bottom teal dot (after final "a") -->
+    <path fill="#51bdcb" d="M570.9 131.1c-4.2 0-7.5 3.2-7.5 7.3 0 4.3 3.3 7.3 7.5 7.3 4.3 0 7.6-3 7.6-7.3.1-4.1-3.3-7.3-7.6-7.3z"/>
+  </g>
 
-  <!-- ipanova logo text -->
-  <text x="80" y="130" font-size="72" font-weight="900" fill="#ffffff" letter-spacing="-2" opacity="0.95">ipanova</text>
-  <!-- Teal dot from logo -->
-  <circle cx="484" cy="138" r="7" fill="#51bdcb"/>
+  <!-- Teal separator line under logo -->
+  <rect x="80" y="196" width="100" height="3" fill="#51bdcb" rx="1.5"/>
 
-  <!-- Design System subtitle -->
-  <text x="82" y="185" font-size="22" font-weight="400" fill="#51bdcb" letter-spacing="8">DESIGN  SYSTEM</text>
+  <!-- DESIGN SYSTEM label -->
+  <text x="82" y="228" font-family="'Segoe UI',Arial,sans-serif" font-size="18" font-weight="400" fill="#51bdcb" letter-spacing="10">DESIGN SYSTEM</text>
 
   <!-- Tagline -->
-  <text x="82" y="248" font-size="16" font-weight="400" fill="#888888" letter-spacing="1">Single-file · LLM-ready · PowerPoint generation</text>
+  <text x="82" y="262" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#666666" letter-spacing="1.5">Slides · Canva · Google Slides · LLM-ready</text>
 
-  <!-- Version badge -->
-  <rect x="82" y="268" width="76" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
-  <rect x="82" y="268" width="76" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
-  <text x="120" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">v 2.0.0</text>
+  <!-- Badges -->
+  <rect x="82" y="278" width="80" height="22" rx="4" fill="none" stroke="#51bdcb" stroke-width="1" opacity="0.6"/>
+  <text x="122" y="294" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="0.5">v 2.0.0</text>
 
-  <!-- Slide count badge -->
-  <rect x="170" y="268" width="110" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
-  <rect x="170" y="268" width="110" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
-  <text x="225" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">10 LAYOUTS</text>
+  <rect x="174" y="278" width="108" height="22" rx="4" fill="none" stroke="#51bdcb" stroke-width="1" opacity="0.6"/>
+  <text x="228" y="294" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="0.5">10 LAYOUTS</text>
 
-  <!-- Asset badge -->
-  <rect x="292" y="268" width="120" height="22" rx="4" fill="#51bdcb" opacity="0.15"/>
-  <rect x="292" y="268" width="120" height="22" rx="4" stroke="#51bdcb" stroke-width="1" fill="none"/>
-  <text x="352" y="284" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="1">40+ ASSETS</text>
+  <rect x="294" y="278" width="118" height="22" rx="4" fill="none" stroke="#51bdcb" stroke-width="1" opacity="0.6"/>
+  <text x="353" y="294" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="0.5">40+ ASSETS</text>
+
+  <rect x="424" y="278" width="110" height="22" rx="4" fill="none" stroke="#51bdcb" stroke-width="1" opacity="0.6"/>
+  <text x="479" y="294" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="600" fill="#51bdcb" text-anchor="middle" letter-spacing="0.5">4 PÔLES</text>
 </svg>
