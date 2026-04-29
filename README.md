@@ -24,12 +24,17 @@
 
 ## ★ Démarrage rapide
 
-**Une seule règle :** injecte [`DESIGN.md`](DESIGN.md) dans ton LLM. Il contient tout.
+**Deux fichiers suffisent** pour générer des slides visuellement conformes ET factuellement justes :
+
+| Fichier | Rôle |
+|---|---|
+| [`DESIGN.md`](DESIGN.md) | Tokens visuels · layouts · règles de composition |
+| [`brand/ipanova.md`](brand/ipanova.md) | Faits · chiffres · équipe · 4 pôles · clients · messages |
 
 ```
-1. Copie le contenu de DESIGN.md dans le contexte de ton LLM (Claude, GPT, Gemini…)
+1. Copie DESIGN.md + brand/ipanova.md dans le contexte de ton LLM
 2. Fournis un brief (modèle → prompts/generation-brief.md)
-3. Demande la génération dans le format de ton choix
+3. Précise l'outil cible : Canva · Google Slides · PowerPoint · python-pptx
 ```
 
 > `DESIGN.md` suit le standard [getdesign.md](https://getdesign.md/) — token, règle et rationale dans un seul fichier, lisible par un agent ou par un humain.
@@ -207,7 +212,9 @@ Couvrent les pôles ERP/SAP, Data, Applications sur mesure, et le secteur Aéron
 
 ```
 ipanova-design-system/
-├── DESIGN.md                    ★ Source unique — injecter dans le LLM
+├── DESIGN.md                    ★ Tokens visuels — injecter dans le LLM
+├── brand/
+│   └── ipanova.md               ★ Faits & contenu — injecter avec DESIGN.md
 ├── tokens/                      colors · typography · spacing
 ├── layouts/                     10 layouts documentés
 ├── components/                  8 composants (hexagone, banner, ghost-number…)
@@ -228,15 +235,16 @@ ipanova-design-system/
 
 ```
 # Injecter dans ton LLM :
-[contenu de DESIGN.md]
+[contenu de DESIGN.md] + [contenu de brand/ipanova.md]
 
 # Prompt exemple :
 Génère une slide "content-icon-list" pour Ipanova.
 Sujet : Notre offre IA
-4 services : Automatisation des process, RAG documentaire,
-             Agents métier, Fine-tuning sur mesure
-Section : NOTRE OFFRE · Page 4
-Format : Canva JSON / python-pptx / HTML
+4 axes : Acculturation, Automatisation (n8n, Power Automate),
+         Agents métier, Intégration ERP (SAP Joule)
+Tagline teal pour chaque bloc.
+Section banner : NOTRE OFFRE · Page 4
+Outil cible : Google Slides
 ```
 
 ---

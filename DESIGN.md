@@ -1,8 +1,9 @@
 # DESIGN.md — Ipanova Presentation System
 
-> **How to use this file:** Drop it into any LLM context alongside a generation brief. It contains every token, rule, and rationale needed to produce on-brand Ipanova slides without guesswork. The file is self-contained — no need to read other files in this repo unless you want deeper reference.
+> **How to use this file:** Drop it into any LLM context alongside a generation brief. It contains every token, rule, and rationale needed to produce on-brand Ipanova slides without guesswork.
+> For factual content (numbers, clients, team, offer details), also inject **`brand/ipanova.md`**.
 
-**Brand essence:** Ipanova is a French SAP & digital consulting firm. Slides must feel expert yet human — structured, clean, and confident without being cold. The teal accent is the brand's heartbeat; it appears on every slide, on the words that matter most.
+**Brand essence:** Ipanova est une ESN française créée en 2015, ~100 consultants, 8,25 M€ de CA, +20 %/an. 4 pôles : ERP/SAP · Data & BI · Applications sur mesure · Intelligence Artificielle. Clients de référence : Airbus, Safran, ATR. Implantations : Toulouse · Nantes · Paris · Mobile (Alabama, USA). Les slides doivent incarner l'expertise sans froideur — structurées, confiantes, humaines. Le teal `#51bdcb` est le battement de cœur de la marque : il apparaît sur chaque slide, sur les mots qui comptent.
 
 ---
 
@@ -362,50 +363,74 @@ Other layouts:    Decorative strip only (max 25% width, right side)
 
 These are reusable prompts to give an LLM when generating Ipanova slides. Include this section alongside your brief.
 
+### Fichiers à injecter ensemble
+
+| Fichier | Contient |
+|---|---|
+| `DESIGN.md` (ce fichier) | Tous les tokens visuels, layouts, règles de composition |
+| `brand/ipanova.md` | Faits, chiffres, équipe, 4 pôles, clients, messages commerciaux |
+
+> Injecter les deux fichiers garantit des slides **visuellement conformes ET factuellement justes**.
+
 ### System context to always inject
 ```
-You are generating slides for Ipanova, a French SAP and digital consulting firm.
-Use this DESIGN.md as the authoritative source for all visual decisions.
-The slide format is PowerPoint 16:9, 1280×720pt.
-Font: Poppins only (Google Fonts).
-Never deviate from the bicolor title rule: UPPERCASE, strategic noun in #51bdcb, rest in #333333.
+Tu génères des slides pour Ipanova, une ESN française spécialisée en transformation numérique
+(ERP/SAP, Data & BI, Applications sur mesure, IA).
+Utilise DESIGN.md comme source de vérité pour toutes les décisions visuelles.
+Utilise brand/ipanova.md pour tous les faits, chiffres et messages commerciaux.
+Format des slides : 16:9, 1280×720pt. Outil cible : [Canva / Google Slides / PowerPoint / python-pptx].
+Police : Poppins uniquement.
+Règle absolue des titres : UPPERCASE, nom stratégique en #51bdcb, reste en #333333.
+Ne jamais inventer de chiffres — utiliser uniquement ceux de brand/ipanova.md.
 ```
 
 ### Prompt templates
 
-**Generate a single slide:**
+**Générer une slide unique :**
 ```
-Generate a [LAYOUT_NAME] slide for Ipanova using DESIGN.md.
-Topic: [TOPIC]
-Key points: [BULLET LIST]
-Section: [SECTION NAME FOR BANNER]
-Page number: [N]
-Output format: python-pptx code
-```
-
-**Generate a full deck:**
-```
-Generate an Ipanova presentation deck using DESIGN.md.
-Deck title: [TITLE]
-Sections: [LIST]
-For each section include: 1 section-divider + 2–3 content slides.
-Always start with cover + sommaire. Always end with closing.
-Output: python-pptx code, one function per slide.
+Génère une slide "[LAYOUT_NAME]" pour Ipanova.
+Sources : DESIGN.md (visuel) + brand/ipanova.md (contenu).
+Sujet : [SUJET]
+Points clés : [LISTE]
+Section banner : [NOM DE SECTION]
+Page : [N]
+Outil cible : [Canva / Google Slides / PowerPoint / python-pptx]
 ```
 
-**Check compliance:**
+**Générer un deck complet :**
 ```
-Review this slide description against the Ipanova DESIGN.md.
-Flag any deviations from: bicolor title rule, hexagon icon frames, section banner presence, font usage, color roles.
-[SLIDE DESCRIPTION]
+Génère un deck de présentation Ipanova.
+Sources : DESIGN.md + brand/ipanova.md.
+Titre du deck : [TITRE]
+Sections : [LISTE]
+Structure : cover → sommaire → (section-divider + 2-3 slides) × N → closing.
+Outil cible : [Canva / Google Slides / PowerPoint / python-pptx]
 ```
 
-**Adapt an existing deck:**
+**Vérifier la conformité :**
 ```
-Reformat the following content into Ipanova design system (DESIGN.md).
-Choose the most appropriate layout for each slide from the layout catalog.
-Maintain all factual content, only change structure and styling.
-[CONTENT]
+Vérifie cette slide par rapport au DESIGN.md Ipanova.
+Signale toute déviation : règle du titre bicolore, hexagones teal, présence du section banner,
+usage de Poppins, rôles des couleurs, densité du contenu.
+[DESCRIPTION DE LA SLIDE]
+```
+
+**Adapter un deck existant :**
+```
+Reformate ce contenu dans le design system Ipanova (DESIGN.md + brand/ipanova.md).
+Choisis le layout le plus approprié pour chaque slide depuis le layout catalog.
+Conserve tout le contenu factuel, ne change que la structure et le style.
+Ne corrige les faits que si brand/ipanova.md contient une version plus précise.
+[CONTENU]
+```
+
+**Générer une slide pôle IA :**
+```
+Génère une slide Ipanova sur le pôle Intelligence Artificielle.
+Layout suggéré : content-icon-list (4 axes : Acculturation, Automatisation, Agents, Intégration ERP).
+Taglines italiques teal pour chaque axe.
+Utiliser brand/ipanova.md section "Pôle Intelligence Artificielle" pour le contenu.
+Mentionner : approche pragmatique, intégrée au SI, orientée valeur.
 ```
 
 ### Icon selection guide
